@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend
+  name: shadcn-dashboard
 spec:
   selector:
     matchLabels:
-      app: frontend
+      app: shadcn-dashboard
   template:
     metadata:
       labels:
-        app: frontend
+        app: shadcn-dashboard
     spec:
       containers:
       - name: frontend
-        image: arjus100/fullstack-frontend:dev
+        image: arjus100/shadcn-dashboard:dev
