@@ -15,5 +15,9 @@ spec:
       containers:
       - name: shadcn-dashboard
         image: arjus100/shadcn-dashboard:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: frontend-config

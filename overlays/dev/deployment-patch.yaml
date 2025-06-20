@@ -14,3 +14,4 @@ spec:
       containers:
       - name: shadcn-dashboard
         image: arjus100/shadcn-dashboard:dev
+        imagePullPolicy: Always
