@@ -12,5 +12,5 @@ spec:
         app: shadcn-dashboard
     spec:
       containers:
-      - name: frontend
+      - name: shadcn-dashboard
         image: arjus100/shadcn-dashboard:dev
