@@ -3,6 +3,7 @@ namespace: frontend-prod
 resources:
   - ../../base
   - namespace.yaml
+  - ingress.yaml
 
 patchesStrategicMerge:
   - deployment-patch.yaml
