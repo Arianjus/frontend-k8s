@@ -21,3 +21,10 @@ spec:
         envFrom:
         - configMapRef:
             name: frontend-config
+        volumeMounts:
+        - name: dashboard-data
+          mountPath: /app/data
+      volumes:
+      - name: dashboard-data
+        persistentVolumeClaim:
+          claimName: dashboard-data-pvc
