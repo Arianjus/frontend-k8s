@@ -16,3 +16,7 @@ spec:
       - name: shadcn-dashboard
         image: arjus100/shadcn-dashboard:latest
         imagePullPolicy: Always
+      volumes:
+        - name: dashboard-data
+          persistentVolumeClaim:
+            claimName: dashboard-data-pvc
